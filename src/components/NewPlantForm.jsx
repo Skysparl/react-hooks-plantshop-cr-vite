@@ -15,7 +15,7 @@ function NewPlantForm({ onAddPlant }) {
     e.preventDefault();
     fetch("http://localhost:6001/plants", {
       method: "POST",
-      headers: { "Content-Type": "Application/JSON" },
+    headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     })
       .then((r) => r.json())
